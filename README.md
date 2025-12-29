@@ -1,75 +1,43 @@
-# Nuxt Minimal Starter
+# Business Portfolio Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern, responsive **business portfolio website** built with **Nuxt 3** and **Vue 3**, designed to showcase projects, services, and professional experience. The application focuses on performance, scalability, and a clean user experience, making it suitable for both personal branding and business presentation.
 
-## Setup
+## ✨ Features
 
-Make sure to install dependencies:
+- ⚡ **Nuxt 3 (Vue 3)** with modern Composition API
+- 🎨 **Tailwind CSS** for fast, consistent, and responsive UI
+- 🌙 **Dark / Light mode** support using Color Mode
+- 🌍 **Internationalization (i18n)** with multi-language support
+- 🖼 **Optimized images** using Nuxt Image
+- 🔐 **Supabase integration** for backend services and authentication
+- 🎬 **Lottie animations** for enhanced visual storytelling
+- 📱 Fully **responsive design** (mobile-first)
+- ♿ Accessibility-friendly and SEO-ready
+
+## 🛠 Tech Stack
+
+- **Framework:** Nuxt 3, Vue 3
+- **Styling:** Tailwind CSS, Typography, Forms, Aspect Ratio
+- **Icons:** Font Awesome, Nuxt Icon
+- **Internationalization:** @nuxtjs/i18n
+- **Backend / Auth:** Supabase
+- **Animations:** Vue3 Lottie
+- **Routing:** Vue Router
+
+## 📦 Project Setup
 
 ```bash
-# npm
+# Install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Run development server
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
+# Build for production
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
+# Preview production build
 npm run preview
 
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+# Generate static site
+npm run generate
