@@ -151,8 +151,8 @@ export const careerGroups: CareerGroup[] = [
     slides: [
       {
         description: {
-          en: 'Developed and maintained an admin dashboard for a clothing-selling application using Vue.js, Nuxt.js and Spring Boot.',
-          ru: 'Разработал и поддерживал панель администратора для приложения по продаже одежды с использованием Vue.js, Nuxt.js и Spring Boot.'
+          en: 'Developed and maintained an admin dashboard for a clothing-selling application using Vue.js and Spring Boot.',
+          ru: 'Разработал и поддерживал панель администратора для приложения по продаже одежды с использованием Vue.js и Spring Boot.'
         },
         iconName: 'mdi:vuejs',
         company: {
@@ -163,15 +163,15 @@ export const careerGroups: CareerGroup[] = [
           en: 'Full-stack Developer',
           ru: 'Full-stack Разработчик'
         },
-        period: '2024-Present',
-        skills: ['Vue.js', 'Nuxt.js', 'Spring Boot']
+        period: 'Sep 2024 - May 2025',
+        skills: ['Vue.js', 'Spring Boot', 'Admin Dashboard']
       },
       {
         description: {
-          en: 'Collaborated with stakeholders to gather requirements and ensure the dashboard met business needs.',
-          ru: 'Сотрудничал с заинтересованными сторонами для сбора требований и обеспечения соответствия панели управления бизнес-потребностям.'
+          en: 'Utilized Spring Boot for scalable and efficient backend infrastructure, handling product management, order tracking, and user roles.',
+          ru: 'Использовал Spring Boot для масштабируемой и эффективной backend-инфраструктуры, обрабатывая управление продуктами, отслеживание заказов и роли пользователей.'
         },
-        iconName: 'mdi:handshake',
+        iconName: 'mdi:server',
         company: {
           en: 'Freelance',
           ru: 'Фриланс'
@@ -180,8 +180,25 @@ export const careerGroups: CareerGroup[] = [
           en: 'Full-stack Developer',
           ru: 'Full-stack Разработчик'
         },
-        period: '2024-Present',
-        skills: ['Requirements Gathering', 'Client Communication', 'Project Management']
+        period: 'Sep 2024 - May 2025',
+        skills: ['Spring Boot', 'Backend Infrastructure', 'Product Management', 'Order Tracking']
+      },
+      {
+        description: {
+          en: 'Designed a responsive and user-friendly interface using Vue.js, ensuring seamless navigation and data visualization.',
+          ru: 'Спроектировал адаптивный и удобный интерфейс с использованием Vue.js, обеспечивая плавную навигацию и визуализацию данных.'
+        },
+        iconName: 'mdi:monitor-dashboard',
+        company: {
+          en: 'Freelance',
+          ru: 'Фриланс'
+        },
+        position: {
+          en: 'Full-stack Developer',
+          ru: 'Full-stack Разработчик'
+        },
+        period: 'Sep 2024 - May 2025',
+        skills: ['Vue.js', 'Responsive Design', 'Data Visualization', 'UI/UX']
       },
       {
         description: {
@@ -197,11 +214,70 @@ export const careerGroups: CareerGroup[] = [
           en: 'Full-stack Developer',
           ru: 'Full-stack Разработчик'
         },
-        period: '2024-Present',
-        skills: ['React', 'Vite', 'CSS', 'UI/UX Design']
+        period: 'Sep 2024 - May 2025',
+        skills: ['React', 'Vite', 'CSS', 'Performance Optimization']
       },
     ]
-  }
+  },
+  {
+    name: {
+      en: "Inform Medical",
+      ru: "Inform Medical"
+    },
+    slides: [
+      {
+        description: {
+          en: 'Developed responsive websites using React 19, Next.js 16, TypeScript, and TailwindCSS 4 to enhance user experience.',
+          ru: 'Разработал адаптивные веб-сайты с использованием React 19, Next.js 16, TypeScript и TailwindCSS 4 для улучшения пользовательского опыта.'
+        },
+        iconName: 'mdi:react',
+        company: {
+          en: 'Inform Medical',
+          ru: 'Inform Medical'
+        },
+        position: {
+          en: 'Frontend Developer',
+          ru: 'Frontend-разработчик'
+        },
+        period: 'May 2025 - Present',
+        skills: ['React 19', 'Next.js 16', 'TypeScript', 'TailwindCSS 4']
+      },
+      {
+        description: {
+          en: 'Collaborated with cross-functional teams to create practical interfaces that prioritize usability.',
+          ru: 'Сотрудничал с кросс-функциональными командами для создания практичных интерфейсов с акцентом на удобство использования.'
+        },
+        iconName: 'mdi:account-group',
+        company: {
+          en: 'Inform Medical',
+          ru: 'Inform Medical'
+        },
+        position: {
+          en: 'Frontend Developer',
+          ru: 'Frontend-разработчик'
+        },
+        period: 'May 2025 - Present',
+        skills: ['Cross-functional Collaboration', 'UI/UX Design', 'Usability']
+      },
+      {
+        description: {
+          en: 'Implemented best practices in frontend development to ensure seamless functionality and performance.',
+          ru: 'Внедрил лучшие практики frontend-разработки для обеспечения безупречной функциональности и производительности.'
+        },
+        iconName: 'mdi:speedometer',
+        company: {
+          en: 'Inform Medical',
+          ru: 'Inform Medical'
+        },
+        position: {
+          en: 'Frontend Developer',
+          ru: 'Frontend-разработчик'
+        },
+        period: 'May 2025 - Present',
+        skills: ['Frontend Best Practices', 'Performance Optimization', 'Code Quality']
+      },
+    ]
+  },
 ];
 
 export default careerGroups;

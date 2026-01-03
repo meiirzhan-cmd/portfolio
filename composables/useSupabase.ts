@@ -41,13 +41,25 @@ export const useProjects = async () => {
         
         return {
           ...project,
-          // Ensure title and description are properly handled for translation
           title: project.title || '',
           description: project.description || '',
           images: images.map(img => img.image_url)
         } as Project
       })
     )
+    
+    // Preload featured images в браузере
+    if (process.client) {
+      projectsWithImages.forEach(project => {
+        if (project.image_url) {
+          const link = document.createElement('link')
+          link.rel = 'preload'
+          link.as = 'image'
+          link.href = project.image_url
+          document.head.appendChild(link)
+        }
+      })
+    }
     
     return projectsWithImages
   } catch (error) {

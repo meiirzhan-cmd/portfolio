@@ -62,7 +62,8 @@
                 format="webp"
                 quality="80"
                 class="w-full h-48 object-cover object-center transition-transform duration-700 group-hover:scale-110"
-                loading="lazy"
+                :loading="index < 6 ? 'eager' : 'lazy'"
+                :fetchpriority="index < 3 ? 'high' : 'auto'"
               />
               <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <div v-if="project.technologies && project.technologies.length" class="flex flex-wrap gap-1">
@@ -156,7 +157,7 @@
                       format="webp"
                       quality="80"
                       class="w-full rounded-lg"
-                      loading="lazy"
+                      loading="eager"
                     />
                     
                     <!-- Navigation Arrows -->
@@ -204,7 +205,7 @@
                         format="webp"
                         quality="50"
                         class="h-full w-full object-cover"
-                        loading="lazy"
+                        loading="eager"
                       />
                     </button>
                   </div>
@@ -224,7 +225,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
 import { useProjects, type Project } from '~/composables/useSupabase';
 import { useTranslation } from '~/composables/useTranslation';
 import AnimatedHeading from '../ui/AnimatedHeading.vue';
@@ -294,17 +295,25 @@ const formatDate = (dateString: string, style: 'short' | 'full' = 'short') => {
   });
 };
 
-// Open project details modal
+// Open project details modal с preloading изображений
 const openProjectDetails = (project: Project) => {
   selectedProject.value = translateObject(project);
   currentImageIndex.value = 0;
-  document.body.style.overflow = 'hidden'; // Prevent scrolling while modal is open
+  document.body.style.overflow = 'hidden';
+  
+  // Preload все изображения проекта при открытии модального окна
+  if (project.images && project.images.length > 0) {
+    project.images.forEach((imageUrl) => {
+      const img = new Image();
+      img.src = imageUrl;
+    });
+  }
 };
 
 // Close project details modal
 const closeProjectDetails = () => {
   selectedProject.value = null;
-  document.body.style.overflow = ''; // Re-enable scrolling
+  document.body.style.overflow = '';
 };
 
 // Navigation for project images
