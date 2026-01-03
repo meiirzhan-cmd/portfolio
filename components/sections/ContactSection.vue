@@ -88,13 +88,13 @@
                     <div class="min-w-0">
                       <h4 class="text-xl font-medium text-white mb-2">{{ $t('contact.github') }}</h4>
                       <a 
-                        href="https://github.com/meiirzhan2000" 
+                        href="https://github.com/meiirzhan-cmd" 
                         target="_blank" 
                         class="text-neutral-400 hover:text-purple-400 transition-colors block overflow-hidden text-ellipsis"
                         title="github.com/meiirzhan2000"
                       >
-                        <span class="hidden sm:inline">github.com/meiirzhan2000</span>
-                        <span class="inline sm:hidden">meiirzhan2000</span>
+                        <span class="hidden sm:inline">github.com/meiirzhan-cmd</span>
+                        <span class="inline sm:hidden">meiirzhan-cmd</span>
                       </a>
                       <p class="text-neutral-500 text-sm mt-2">
                         {{ $t('contact.githubDescription') }}

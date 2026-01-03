@@ -104,7 +104,7 @@ export default {
     linkedinDescription: "Connect professionally and view my work history",
     github: "GitHub",
     githubDescription: "Check out my code and open-source contributions",
-    location: "Aktau, Kazakhstan",
+    location: "Almaty, Kazakhstan",
     availableRemote: "Available for remote work",
     interestedWorking: "Interested in working together?",
     talkProject: "Let's Talk About Your Project",
